@@ -21,8 +21,8 @@
         <h1 class="intro__title">OWEN</h1>
         <p class="intro__txt">Duda is going from strength to strength. Whether it’s in the prestigious gallery in the new World Trade Centre in New York or at an international art fair in Chicago or Hong Kong, people recognize the original response to life in Duda’s work, and go away feeling animated and energized by his vibrant creations.</p>
     </div>
-    <img class="intro__img intro__img--1" src="https://assets.codepen.io/61488/duda-intro-1.jpg" />
-    <img class="intro__img intro__img--2" src="https://assets.codepen.io/61488/duda-intro-2.jpg" />
+    <img class="intro__img intro__img--1" src="@/assets/images/pic2.webp" />
+    <img class="intro__img intro__img--2" src="@/assets/images/pic1.webp" />
 </div>
 </template>
 
