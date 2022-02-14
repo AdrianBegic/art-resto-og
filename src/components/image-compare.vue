@@ -12,9 +12,9 @@
       :style="{ width: posX + 'px' }"
       v-show="!hideAfter"
     >
-      <img :src="images/pic2.webp" :alt="after" :style="dimensions" />
+      <img :src="after" :alt="after" :style="dimensions" />
     </div>
-    <img :src="images/pic2.webp" :alt="before" :style="dimensions" />
+    <img :src="before" :alt="before" :style="dimensions" />
     <div
       class="image-compare-handle"
       :style="{ left: posX + 'px' }"
@@ -35,14 +35,8 @@
 export default {
   name: "ImageCompare",
   props: {
-    before: {
-      type: String,
-      required: true,
-    },
-    after: {
-      type: String,
-      required: true,
-    },
+    
+    
     full: {
       type: Boolean,
       default: false,

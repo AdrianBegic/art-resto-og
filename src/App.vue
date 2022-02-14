@@ -13,14 +13,14 @@
   <div class="slide-1">
   <Box/>
   </div>
-  
+<ImageCompare/>
 </template>
 
 <script>
 import Nav from "@/components/nav.vue";
 import Box from "@/components/box.vue";
 import DividerOne from "@/components/divider-1.vue";
-
+import ImageCompare from "@/components/image-compare.vue";
 
 export default {
   name: "App",
@@ -28,7 +28,7 @@ export default {
     Nav,
     Box,
     DividerOne,
-    
+   ImageCompare,
   },
 };
 </script>
