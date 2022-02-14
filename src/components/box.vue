@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <div class="box">
-      <div class="img-holder">
-        <img src="@/assets/images/owen.webp" />
-      </div>
-      <div class="text-holder">
-        <h1>GARY OWEN </h1>
+  <div class="box">
+    <div class="img-holder">
+      <img src="@/assets/images/owen.webp" />
+    </div>
+    <div class="text-holder">
+      <container>
+        <h1>GARY OWEN</h1>
         <h3 class="content" style="font-weight: 100">
           In the year 2000, after many years working in the art field, under
           various disciplines l decided to go out on my own again and open a
@@ -14,9 +14,10 @@
           tough at times l'm lucky to love what l do and continue to derive
           great pleasure in connecting with people with a common interest in
           art, whether it's framing a family photograph, selling a piece of art
-          they connect with or restoring a family heirloom.
+          they connect with or restoring a family heirloom...
         </h3>
-      </div>
+         <a href="#">Read More ❯</a> 
+      </container>
     </div>
   </div>
 </template>
@@ -31,17 +32,8 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  height: 90vh;
-}
 
 img {
   max-width: 100%;
@@ -54,8 +46,8 @@ h1 {
   letter-spacing: 0.5em;
 }
 .box {
-  background-color: #c2c2c2;
-  width: 100%;
+  background-color: #f3f3f3;
+  width: 70%;
   height: 80%;
   margin: 0 auto;
 }
@@ -64,7 +56,6 @@ h1 {
   float: left;
   width: 50%;
   height: 100%;
-  padding: 30px;
 }
 
 .text-holder {
@@ -74,10 +65,26 @@ h1 {
   color: #4d4d4d;
   font-weight: 100;
   padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
   margin: 1em;
   padding-top: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+a:hover {
+  color: #666;
 }
 </style>
