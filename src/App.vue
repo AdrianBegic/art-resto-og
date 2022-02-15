@@ -1,6 +1,7 @@
 <template>
+<div id="app">
   <Nav/>
-
+ <div class="routing" v-if="this.$route.path == '/'">
   <div class="slide-0">
     <div class="intro__content">
       <h1 class="intro__title">OWEN</h1>
@@ -13,22 +14,24 @@
   <div class="slide-1">
   <Box/>
   </div>
-<ImageCompare/>
+  </div>
+  <router-view></router-view>
+  </div>
 </template>
 
 <script>
 import Nav from "@/components/nav.vue";
 import Box from "@/components/box.vue";
 import DividerOne from "@/components/divider-1.vue";
-import ImageCompare from "@/components/image-compare.vue";
+
 
 export default {
-  name: "App",
+  name: "Home",
   components: {
     Nav,
     Box,
     DividerOne,
-   ImageCompare,
+   
   },
 };
 </script>
