@@ -8,7 +8,7 @@
     </div>
     <nav class="header__nav-wrap" :class="{ 'open': burgerVisibility }">
         <ul class="header__nav-list" @click="burgerVisibility = false">
-            <li class="header__nav-item"><a class="header__nav-link" href="#">SERVICES</a></li>
+            <li class="header__nav-item"><router-link class="header__nav-link" to="/Services">SERVICES</router-link></li>
             <li class="header__nav-item"><a class="header__nav-link" href="#">ABOUT</a></li>
             <li class="header__nav-item"><router-link class="header__nav-link" to="/Gallery">GALLERY</router-link></li>
             <li class="header__nav-item"><a class="header__nav-link" href="#">CONTACT</a></li>

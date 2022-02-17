@@ -74,6 +74,7 @@ h1 {
   margin: 1em;
   padding-top: 5%;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
 }
 
 a {

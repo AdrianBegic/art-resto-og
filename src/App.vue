@@ -20,6 +20,7 @@
   </div>
   </div>
   <router-view></router-view>
+  <footerMain/>
   </div>
 </template>
 
@@ -27,7 +28,8 @@
 import Nav from "@/components/nav.vue";
 import Box from "@/components/box.vue";
 import DividerOne from "@/components/divider-1.vue";
-import boxTwo from '@/components/boxTwo.vue'
+import boxTwo from "@/components/boxTwo.vue";
+import footerMain from "@/components/footer-main.vue";
 
 export default {
   name: "Home",
@@ -36,6 +38,7 @@ export default {
     Box,
     DividerOne,
     boxTwo,
+    footerMain,
   },
 
   

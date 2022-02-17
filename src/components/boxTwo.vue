@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style>
+<style >
 
 img , svg {
     min-height: 500px;
