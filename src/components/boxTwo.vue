@@ -1,35 +1,33 @@
 <template>
-  <div class="content">
-    <ImageCompare  :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/>
-   
-  </div>
+    <div>
+        <ImageCompare  :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/>
+    </div>
 </template>
 
 <script>
-
 import ImageCompare from '@/components/image-compare.vue'
 
 export default {
-  name: 'Gallery',
-  components: {
-    ImageCompare
+    name: "boxTwo",
+    props: {
+    msg: String,
   },
 
-data() {
+    components: {
+    ImageCompare,
+  },
+
+  data() {
     return {
       BeforeImage: require('../assets/images/frame-before.webp'),
       AfterImage: require('../assets/images/frame-after.webp'),
     }
-  }
+  },
+    
 
-};
+}
 </script>
 
 <style scoped>
-.content {
-  margin: 0 auto;
-  width: 50%;
-  
 
-}
 </style>

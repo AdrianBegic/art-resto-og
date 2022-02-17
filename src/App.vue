@@ -14,6 +14,9 @@
   <div class="slide-1">
   <Box/>
   </div>
+  <div class="slide-2">
+  <boxTwo/>
+  </div>
   </div>
   <router-view></router-view>
   </div>
@@ -23,7 +26,7 @@
 import Nav from "@/components/nav.vue";
 import Box from "@/components/box.vue";
 import DividerOne from "@/components/divider-1.vue";
-
+import boxTwo from '@/components/boxTwo.vue'
 
 export default {
   name: "Home",
@@ -31,8 +34,10 @@ export default {
     Nav,
     Box,
     DividerOne,
-   
+    boxTwo,
   },
+
+  
 };
 </script>
 
@@ -83,6 +88,15 @@ export default {
 }
 
 .slide-1 {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+    align-items: center;
+}
+
+.slide-2 {
   background-color: #000;
   color: #fff;
   width: 100%;

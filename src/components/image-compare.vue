@@ -19,17 +19,15 @@ export default {
   name: "ImageCompare",
   components: {},
 
- props: {
-    BeforeImage: {
-      type: String,
-      src: '',
-    },
-    AfterImage: {
-      type: String,
-      default: '',
-    },
-    },
+props: {
+   BeforeImage: null,
+    AfterImage: null,
+},
+   
+ 
 
+
+ 
  
   
 };

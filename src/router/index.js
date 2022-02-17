@@ -9,11 +9,9 @@ const routes = [
     component: () => import('../views/Gallery.vue')
   },
 
-  {
-    path: '/:catchAll(.*)*',
-    name: "PageNotFound",
-    component: () => import('../components/PageNotFound.vue')
-  },
+
+
+  
 ]
 
 const router = createRouter({
