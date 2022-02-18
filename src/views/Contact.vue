@@ -1,18 +1,20 @@
 <template>
+<div class="splash">
+      <h1 class="contact-title">CONTACT</h1>
+      </div>
+      
   <div class="wrapper">
-    <div class="box">
-    <h1>CONTACT</h1>
-    </div>
+    <contactForm/>
   </div>
 </template>
 
 <script>
-
+import contactForm from '../components/contactForm.vue'
 
 export default {
   name: "Contact",
   components: {
-      
+    contactForm,
   },
 };
 </script>
@@ -26,12 +28,22 @@ export default {
     align-items: center;
 }
 
-.box {
-  background-color: #F3D7C1;
-  width: 50%;
-  height: 80%;
-  margin: 0 auto;
+
+
+.splash {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../assets/images/gallery-splash.webp");
+   background-position: center; 
+   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.contact-title {
+  font-size: 9em;
+  margin-top: 5%;
+  color: #fff;
+}
 
 </style>

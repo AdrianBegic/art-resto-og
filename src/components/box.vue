@@ -14,7 +14,7 @@
       </container>
     </div>
     <div class="img-holder">
-      <img src="@/assets/images/owen.webp" />
+      <img id="owen" src="@/assets/images/owen.webp" />
     </div>
   </div>
 </template>
@@ -38,6 +38,10 @@ img {
   min-height: 100%;
 }
 
+#owen {
+  border-radius: 0px 5px 5px 0px;
+}
+
 p {
   font-size: 1.2em;
 }
@@ -48,7 +52,7 @@ p {
   height: 70vh;
   margin: 0 auto;
   padding:0;
-  
+  border-radius: 5px;
 }
 
 .img-holder {
@@ -56,6 +60,7 @@ p {
   width: 50%;
   height: 100%;
   padding: 0;
+  overflow:hidden;
 }
 
 .text-holder {
@@ -99,16 +104,24 @@ a:hover {
     height: 80vh;
   }
 
+h1 {
+  padding-top: 10%;
+}
    .text-holder { 
     float: none;
     margin-right:0;
     width:100%;
-    height: 50%;   
+    height: auto;   
   }
   .img-holder{
     height: 50%;
     width:100%;
   }
+
+#owen {
+  border-radius: 0px 0px 5px 5px;
+}
+
 
   #media-width{
     display: none;

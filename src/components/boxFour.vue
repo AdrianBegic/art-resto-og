@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="img-holder-services">
-      <img src="@/assets/images/frames.webp" />
+      <img id="frame" src="@/assets/images/frames.webp" />
     </div>
     <div class="text-holder">
       <container>
@@ -35,13 +35,17 @@ img {
   min-height: 100%;
 }
 
+#frame {
+  border-radius: 5px 0px 0px 5px;
+}
+
 .box {
   background-color: #F3D7C1;
   width: 80vw;
   height: 70vh;
   margin: 0 auto;
   padding:0;
-  
+  border-radius: 5px;
 }
 
 .img-holder-services {
@@ -102,6 +106,10 @@ img {
     height: 50%;
     width:100%;
   }
+
+  #frame {
+  border-radius: 5px 5px 0px 0px;
+}
 
   #media-width{
     display: none;

@@ -21,7 +21,7 @@
         </span>
     </div>
     <div class="img-holder-services">
-      <img src="@/assets/images/art-resto.webp" />
+      <img id="resto" src="@/assets/images/art-resto.webp" />
     </div>
   </div>
 </template>
@@ -42,6 +42,10 @@ img {
   min-height: 100%;
 }
 
+#resto {
+  border-radius: 0px 5px 5px 0px;
+}
+
 p {
   font-size: 1.2em;
 }
@@ -52,7 +56,7 @@ p {
   height: 70vh;
   margin: 0 auto;
   padding:0;
-  
+  border-radius: 5px;
 }
 
 .img-holder-services {
@@ -98,6 +102,10 @@ p {
     height: 50%;
     width:100%;
   }
+
+#resto {
+  border-radius: 0px 0px 8px 8px;
+}
 
   #media-width{
     display: none;

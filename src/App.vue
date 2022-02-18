@@ -4,23 +4,30 @@
     <div class="routing" v-if="this.$route.path == '/'">
       <div class="slide-0">
         <div class="intro__content">
-          <h1 class="intro__title">OWEN</h1>
-          <h1 class="intro__sub__title">FINE ART RESTORATION AND FRAMING SINCE 1988</h1>
+          <h1 class="intro__title">OWEN GRAY</h1>
+          <h1 class="intro__sub__title">
+            FINE ART RESTORATION AND FRAMING SINCE 1988
+          </h1>
         </div>
       </div>
 
+      <div class="intro-slide">
+        
+      </div>
+
+<div class="parallaxOne"><Box/></div>
       
 
-      <DividerOne />
-      <div class="slide-1">
-        <Box />
-      </div>
-      <DividerOne />
       <div class="slide-2">
         <boxTwo />
       </div>
-    </div>
-    <router-view></router-view>
+
+      <div class="parallaxTwo"><contactForm/></div>
+</div>
+    <router-view >
+ 
+</router-view>
+
     <footerMain />
   </div>
 </template>
@@ -28,17 +35,16 @@
 <script>
 import Nav from "@/components/nav.vue";
 import Box from "@/components/box.vue";
-import DividerOne from "@/components/divider-1.vue";
+import contactForm from '@/components/contactForm.vue'
 import boxTwo from "@/components/boxTwo.vue";
 import footerMain from "@/components/footer-main.vue";
-
 
 export default {
   name: "Home",
   components: {
     Nav,
     Box,
-    DividerOne,
+    contactForm,
     boxTwo,
     footerMain,
   },
@@ -49,15 +55,30 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  .box{
+    border-radius: 8px;
+  }
+  
 }
 
 #app {
-  font-family: Roboto;
+  font-family: Roboto; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
   text-align: center;
   font-weight: bold;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 .logo {
@@ -94,12 +115,6 @@ export default {
   height: 100vh;
 }
 
-
-
-
-
-
-
 @media all and (max-width: 900px) {
   .services-grid {
     display: -webkit-box;
@@ -108,6 +123,38 @@ export default {
     -webkit-box-direction: normal;
     flex-direction: column;
   }
+}
+/*------------PARALLAX-------------*/
+
+.parallaxOne {
+  background-image: url("./assets/images/slide-2-splash.jpg");
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 30px;
+}
+
+
+.parallaxTwo {
+  background-image: url("./assets/images/gallery-splash.webp");
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 30px;
+}
+
+/*------------------------------------------*/
+.intro-slide {
+  background-color: #fdecdc;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .slide-1 {
@@ -127,6 +174,16 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px;
+}
+
+.slide-3 {
+  background-color: #fdecdc;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .intro__img {
@@ -158,27 +215,15 @@ export default {
   font-size: 20vw;
   overflow: hidden;
   letter-spacing: -2.3vw;
-  padding-right: 2.3vw;
-  animation: slide-up 1.5s ease 0.5s;
   padding-top: 10%;
   position: relative;
-}
-
-@keyframes slide-up {
-  0% {
-    transform: TranslateY(250px);
-  }
-  100% {
-    transform: TranslateY(0px);
-  }
+  text-align:center;
 }
 
 .intro__sub__title {
   font-size: 2em;
   text-align: right;
 }
-
-
 
 .intro__txt {
   max-width: 35vw;
@@ -191,27 +236,26 @@ export default {
     margin-left: 5vw;
   }
 }
-------------GENERAL------------
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+------------GENERAL------------ @media only screen and (min-width: 768px) {
+  /* tablets and desktop */
 }
 
 @media only screen and (max-width: 767px) {
-    /* phones */
-    .intro__title{
-      padding: 20%;
-    }
+  /* phones */
+  .intro__title {
+    padding: 20%;
+    padding-top: 50%;
+  }
 
-    .intro__sub__title{
-      text-align: center;
-      padding:30px;
-    }
+  .intro__sub__title {
+    text-align: center;
+    padding: 30px;
+  }
 
-    
+  
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
+  /* portrait phones */
 }
-
 </style>

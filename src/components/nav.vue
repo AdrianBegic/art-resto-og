@@ -1,6 +1,6 @@
 <template>
 <header class="header">
-    <router-link class="header__logo" to="/">GARY OWEN</router-link>
+    <router-link class="header__logo" to="/">G<span id="logo">O</span></router-link>
     <div class="ham-menu" @click="changeVisibility()" :class="{ 'active': burgerVisibility }">
         <span class="ham-menu__item"></span>
         <span class="ham-menu__item"></span>
@@ -8,6 +8,7 @@
     </div>
     <nav class="header__nav-wrap" :class="{ 'open': burgerVisibility }">
         <ul class="header__nav-list" @click="burgerVisibility = false">
+         <li class="header__nav-item"><router-link class="header__nav-link" to="/">HOME</router-link></li>
             <li class="header__nav-item"><router-link class="header__nav-link" to="/Services">SERVICES</router-link></li>
             <li class="header__nav-item"><router-link class="header__nav-link" to="/About">ABOUT</router-link></li>
             <li class="header__nav-item"><router-link class="header__nav-link" to="/Gallery">GALLERY</router-link></li>
@@ -76,30 +77,35 @@ data() {
     display: inline-block;
     height: auto;
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    width: 20px;
+    font-size: 4em;
+    letter-spacing: -22px;
+}
+
+#logo {
+    color: #F3D7C1;
 }
 
 @media screen and (max-width: 559px) {
     .header__logo {
         margin-left: 16px;
-        font-size: 2em;
-        letter-spacing: 0.07em;
+        font-size:4em;
+        letter-spacing: -22px;
     }
 }
 
 @media screen and (min-width: 560px) and (max-width: 959px) {
     .header__logo {
         margin-left: 16px;
-        font-size: 24px;
-        letter-spacing: 0.05em;
+        font-size:4em;
+        letter-spacing: -22px;
     }
 }
 
 @media screen and (min-width: 960px) {
     .header__logo {
         margin-left: 24px;
-        font-size: 26px;
-        letter-spacing: 0.05em;
     }
 }
 

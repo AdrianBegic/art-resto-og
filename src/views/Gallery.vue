@@ -1,9 +1,9 @@
 <template>
   <div class="content">
-  <div class="splash">
+  <div class="parallax-gallery">
       <h1 class="gallery-title">GALLERY</h1>
       </div>
-    <section class="section">
+    <section class="section-gallery">
       <div class="grid">
         <div class="item item--large"></div>
 
@@ -14,6 +14,12 @@
         <div class="item item--large"></div>
 
         <div class="item item--large"></div>
+
+        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
+
+        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
+
+        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
 
         <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
 
@@ -50,6 +56,10 @@ figure {
   margin: 0;
 }
 
+.section-gallery{
+  padding: 100px 30px
+}
+
 .content {
   margin: 0 auto;
   width: 100%;
@@ -57,18 +67,20 @@ figure {
   background-color: #fdecdc;
 }
 
-.splash {
-  width: 100%;
-  height: 30vh;
-  background-image: url("../assets/images/gallery-splash.webp");
-   background-position: center; 
-   display: flex;
+.parallax-gallery {
+  background-image: url("../assets/images/pexels-andrew-neel-2123337.jpg");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .gallery-title {
-  font-size: 5em;
+  font-size: 9em;
   margin-top: 15%;
   color: #fff;
 }
@@ -165,6 +177,25 @@ h1 {
   grid-auto-rows: 100px;
   grid-auto-flow: row dense;
 }
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+   .gallery-title {
+     font-size: 4em;
+   }
+
+   img,svg {
+     min-height: 500px;
+     max-height:500px
+   }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
 }
 
 </style>

@@ -7,6 +7,12 @@
     <div class="img-holder">
       <ImageCompare   :BeforeImage= "BeforeImage2"  :AfterImage= "AfterImage2"/>
     </div>
+    <div class="img-holder">
+      <ImageCompare   :BeforeImage= "BeforeImage1"  :AfterImage= "AfterImage1"/>
+    </div>
+    <div class="img-holder">
+      <ImageCompare id="mobile"  :BeforeImage= "BeforeImage2"  :AfterImage= "AfterImage2"/>
+    </div>
       <router-link class="bottom-link" to="/Gallery">SEE MORE ❯</router-link>
   </div>
 </template>
@@ -33,7 +39,7 @@ export default {
     };
   },
 };
-</script>
+</script >
 
 <style>
 
@@ -44,11 +50,12 @@ img , svg {
 
 .box {
  background-color: #F3D7C1;
-  width: 70%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-  margin: 40px;
+ 
   padding:30px;
+  border-radius: 3px;
 }
 
 .work-title {
@@ -94,7 +101,8 @@ img , svg {
     /* phones */
     .box{
     height: auto;
-    width: 80vw
+    width: 80vw;
+    padding: 10px;
   }
 
    .img-holder { 
@@ -111,6 +119,15 @@ img , svg {
   #media-width{
     display: none;
   }
+
+  img , svg {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+#mobile {
+  display: none;
+}
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {

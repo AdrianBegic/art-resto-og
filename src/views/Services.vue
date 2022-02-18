@@ -1,16 +1,21 @@
 <template>
   <div class="wrapper">
-    <h1 class="title-services">SERVICES</h1>
+<div class="parallax-services">
+    
+      <h1 class="services-title">SERVICES</h1>
+      </div>
     <div class="slide-0-services">
    
     <boxThree/>
    
     </div>
+    <div class="parallax-gallery"></div>
     <div class="slide-1-services">
    
     <boxFour/>
  
     </div>
+    <div class="parallax-gallery"></div>
   </div>
 </template>
 
@@ -32,9 +37,20 @@ export default {
   background-color: #FDECDC;
 }
 
-.title-services {
+.splash {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../assets/images/services-splash.webp");
+   background-position: bottom; 
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-title {
+  font-size: 9em;
+  margin-top: 5%;
   color: #fff;
-  padding: 30px;
 }
 
 .slide-0-services {
@@ -44,7 +60,7 @@ export default {
   height: fit-content;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 80px;
 }
 
 .slide-1-services {
@@ -54,8 +70,29 @@ export default {
   height: fit-content;
   display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 60px 0px ;
 }
 
+.parallax-services {
+  background-image: url("../assets/images/services-splash.webp");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.parallax-gallery {
+  background-image: url("../assets/images/pexels-andrew-neel-2123337.jpg");
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 </style>

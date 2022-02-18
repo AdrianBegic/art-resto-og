@@ -15,7 +15,7 @@
             >Gallery</router-link
           >
 
-          <a href="#">About</a>
+          <router-link class="header__nav-link" to="/About">About</router-link>
 
           <router-link class="header__nav-link" to="/Contact">Contact</router-link>
         </p>
