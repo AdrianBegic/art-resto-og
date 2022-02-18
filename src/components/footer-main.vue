@@ -17,7 +17,7 @@
 
           <a href="#">About</a>
 
-          <a href="#">Contact</a>
+          <router-link class="header__nav-link" to="/Contact">Contact</router-link>
         </p>
 
         <p class="footer-company-name">
@@ -73,14 +73,14 @@ export default {
 
 <style scoped>
 .footer-distributed {
-  background: #000;
+  background: #111;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  border-top: solid 2px #111;
+  border-top: solid 2px #222;
 }
 
 .footer-distributed .footer-left,

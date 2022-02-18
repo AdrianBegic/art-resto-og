@@ -16,7 +16,7 @@
           art, whether it's framing a family photograph, selling a piece of art
           they connect with or restoring a family heirloom...
         </h3>
-         <a href="#">Read More ❯</a> 
+        <router-link class="header__nav-link" to="/About">Read More ❯</router-link>
       </container>
     </div>
   </div>
@@ -42,11 +42,9 @@ img {
   min-height: 100%;
 }
 
-h1 {
-  letter-spacing: 0.5em;
-}
+
 .box {
-  background-color: #f3f3f3;
+  background-color: #F3D7C1;
   width: 70%;
   height: 80%;
   margin: 0 auto;

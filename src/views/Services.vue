@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .wrapper {
-  background-color: #000;
+  background-color: #FDECDC;
 }
 
 .title-services {
@@ -38,19 +38,23 @@ export default {
 }
 
 .slide-0-services {
-  background-color: #000;
+  background-color: #FDECDC;
   color: #fff;
   width: 100%;
-  height: 100vh;
-
+  height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 30px;
 }
 
 .slide-1-services {
-  background-color: #000;
+  background-color: #FDECDC0;
   color: #fff;
   width: 100%;
-  height: 100vh;
-  
+  height: fit-content;
+  display: flex;
+    align-items: center;
+    padding: 30px;
 }
 
 

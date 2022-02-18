@@ -2,13 +2,13 @@
 <div id="app">
   <Nav/>
  <div class="routing" v-if="this.$route.path == '/'">
+ 
   <div class="slide-0">
     <div class="intro__content">
       <h1 class="intro__title">OWEN</h1>
       <h1 class="intro__sub__title">FINE ART RESTORATION AND FRAMING</h1>
     </div>
-    <img class="intro__img intro__img--1" src="@/assets/images/pic2.webp" />
-    <img class="intro__img intro__img--2" src="@/assets/images/pic1.webp" />
+    
   </div>
 <DividerOne/>
   <div class="slide-1">
@@ -55,7 +55,9 @@ export default {
   font-family: Roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
   text-align: center;
+  font-weight: bold;
 }
 
 .logo {
@@ -85,14 +87,15 @@ export default {
 }
 
 .slide-0 {
-  background-color: #000;
+  background-image: url("./assets/images/pexels-photo-2378469.jpeg");
+  background-repeat: no-repeat, repeat;
   color: #fff;
   width: 100%;
   height: 100vh;
 }
 
 .slide-1 {
-  background-color: #000;
+  background-color: #FDECDC;
   color: #fff;
   width: 100%;
   height: 100vh;
@@ -101,7 +104,7 @@ export default {
 }
 
 .slide-2 {
-  background-color: #000;
+  background-color: #FDECDC;
   color: #fff;
   width: 100%;
   display: flex;
@@ -120,35 +123,14 @@ export default {
   }
 }
 
-.intro__img--1 {
-  z-index: 2;
-  left: 10%;
-  bottom: 20%;
 
-  @media all and (max-width: 768px) {
-    top: 15vh;
-    left: 50%;
-    bottom: 50vh;
-  }
-}
-
-.intro__img--2 {
-  z-index: 1;
-  left: 25%;
-  bottom: 30%;
-
-  @media all and (max-width: 768px) {
-    top: 2vh;
-    left: 70%;
-    bottom: 60vh;
-  }
-}
 
 .intro__content {
-  position: absolute;
-  right: 5%;
-  bottom: 15%;
+  position: relative;
+  right: 3%;
+  
   z-index: 3;
+    color: #fff;
 }
 
 @media all and (max-width: 768px) {
@@ -163,6 +145,8 @@ export default {
   letter-spacing: -2.3vw;
   padding-right: 2.3vw;
   animation: slide-up 1.5s ease 0.5s;
+  padding-top: 10%;
+  position: relative;
 }
 
 @keyframes slide-up {

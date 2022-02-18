@@ -52,7 +52,7 @@ p {
 }
 
 .box {
-  background-color: #f3f3f3;
+  background-color: #F3D7C1;
   width: 80vw;
   height: 70vh;
   margin: 0 auto;

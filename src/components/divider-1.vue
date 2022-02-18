@@ -14,11 +14,11 @@ export default {
 <style scoped>
 hr {
   border: none;
-  height: 40px;
+  height: 20px;
   width: 90%;
-  height: 50px;
+  height: 20px;
   margin-top: 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 1px solid #fff;
   box-shadow: 0 20px 20px -20px #fff;
   margin: -50px auto 10px;
 }

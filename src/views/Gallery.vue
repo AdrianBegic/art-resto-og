@@ -1,35 +1,170 @@
 <template>
   <div class="content">
-    <ImageCompare  :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/>
-   
+  <div class="splash">
+      <h1 class="gallery-title">GALLERY</h1>
+      </div>
+    <section class="section">
+      <div class="grid">
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
+
+      </div>
+    
+    </section>
   </div>
 </template>
 
 <script>
-
-import ImageCompare from '@/components/image-compare.vue'
+import ImageCompare from "@/components/image-compare.vue";
 
 export default {
-  name: 'Gallery',
+  name: "Gallery",
   components: {
-    ImageCompare
+    ImageCompare,
   },
 
-data() {
+  data() {
     return {
-      BeforeImage: require('../assets/images/frame-before.webp'),
-      AfterImage: require('../assets/images/frame-after.webp'),
-    }
-  }
-
+      BeforeImage: require("../assets/images/frame-before.webp"),
+      AfterImage: require("../assets/images/frame-after.webp"),
+    };
+  },
 };
 </script>
 
 <style scoped>
+
+figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
 .content {
   margin: 0 auto;
-  width: 50%;
-  
-
+  width: 100%;
+  height: 100%;
+  background-color: #fdecdc;
 }
+
+.splash {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../assets/images/gallery-splash.webp");
+   background-position: center; 
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-title {
+  font-size: 5em;
+  margin-top: 15%;
+  color: #fff;
+}
+
+
+@supports (display: grid) {
+  display: block;
+}
+
+.section {
+  display: ;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 4rem;
+  }
+}
+@supports (display: grid) {
+  display: block;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5em;
+}
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-auto-rows: 100px;
+  grid-auto-flow: row dense;
+}
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url("../assets/images/frame-after.webp");
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+  transition: transform 0.3s ease-in-out;
+  counter-increment: item-counter;
+}
+.item:nth-of-type(3n) {
+  background-image: url("../assets/images/dog-after.webp");
+}
+.item:nth-of-type(4n) {
+  background-image: url("../assets/images/dog-after.webp");
+}
+.item:nth-of-type(5n) {
+  background-image: url("../assets/images/dog-after.webp");
+}
+.item:nth-of-type(6n) {
+  background-image: url("../assets/images/dog-after.webp");
+}
+.item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 3;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+.item--full {
+  grid-column-end: auto;
+}
+@media screen and (max-width: 768px) {
+  .item--full {
+    grid-column: -1;
+    grid-row-end: span 1;
+  }
+  .grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+  grid-auto-flow: row dense;
+}
+}
+
 </style>

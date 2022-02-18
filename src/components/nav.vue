@@ -9,9 +9,9 @@
     <nav class="header__nav-wrap" :class="{ 'open': burgerVisibility }">
         <ul class="header__nav-list" @click="burgerVisibility = false">
             <li class="header__nav-item"><router-link class="header__nav-link" to="/Services">SERVICES</router-link></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">ABOUT</a></li>
+            <li class="header__nav-item"><router-link class="header__nav-link" to="/About">ABOUT</router-link></li>
             <li class="header__nav-item"><router-link class="header__nav-link" to="/Gallery">GALLERY</router-link></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">CONTACT</a></li>
+            <li class="header__nav-item"><router-link class="header__nav-link" to="/Contact">CONTACT</router-link></li>
         </ul>
     </nav>
 </header>
@@ -46,11 +46,12 @@ data() {
 .header {
     display: flex;
     width: 100%;
-    background-color: #000;
+    background-color: #936F5D;
     color: #fff;
     align-items: center;
-    position: relative;
+    position: fixed;
     box-sizing: border-box;
+    z-index: 999;
 }
 
 @media screen and (max-width: 559px) {
@@ -81,7 +82,7 @@ data() {
 @media screen and (max-width: 559px) {
     .header__logo {
         margin-left: 16px;
-        font-size: 18px;
+        font-size: 2em;
         letter-spacing: 0.07em;
     }
 }
@@ -244,7 +245,7 @@ data() {
 
 @media screen and (min-width: 960px) {
     .header__nav-link::after {
-        background-color: #1a1c1a;
+        background-color: #F0D0B8;
     }
 }
 
@@ -267,7 +268,7 @@ data() {
         display: flex;
         justify-content: center;
         border-radius: 5px;
-        border: 2px solid #000;
+        border: 2px solid #fff;
         cursor: pointer;
     }
 }
