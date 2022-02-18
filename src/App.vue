@@ -1,26 +1,27 @@
 <template>
-<div id="app">
-  <Nav/>
- <div class="routing" v-if="this.$route.path == '/'">
- 
-  <div class="slide-0">
-    <div class="intro__content">
-      <h1 class="intro__title">OWEN</h1>
-      <h1 class="intro__sub__title">FINE ART RESTORATION AND FRAMING</h1>
+  <div id="app">
+    <Nav />
+    <div class="routing" v-if="this.$route.path == '/'">
+      <div class="slide-0">
+        <div class="intro__content">
+          <h1 class="intro__title">OWEN</h1>
+          <h1 class="intro__sub__title">FINE ART RESTORATION AND FRAMING SINCE 1988</h1>
+        </div>
+      </div>
+
+      
+
+      <DividerOne />
+      <div class="slide-1">
+        <Box />
+      </div>
+      <DividerOne />
+      <div class="slide-2">
+        <boxTwo />
+      </div>
     </div>
-    
-  </div>
-<DividerOne/>
-  <div class="slide-1">
-  <Box/>
-  </div>
-  <DividerOne/>
-  <div class="slide-2">
-  <boxTwo/>
-  </div>
-  </div>
-  <router-view></router-view>
-  <footerMain/>
+    <router-view></router-view>
+    <footerMain />
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import DividerOne from "@/components/divider-1.vue";
 import boxTwo from "@/components/boxTwo.vue";
 import footerMain from "@/components/footer-main.vue";
 
+
 export default {
   name: "Home",
   components: {
@@ -40,8 +42,6 @@ export default {
     boxTwo,
     footerMain,
   },
-
-  
 };
 </script>
 
@@ -94,19 +94,36 @@ export default {
   height: 100vh;
 }
 
+
+
+
+
+
+
+@media all and (max-width: 900px) {
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
 .slide-1 {
-  background-color: #FDECDC;
+  background-color: #fdecdc;
   color: #fff;
   width: 100%;
   height: 100vh;
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .slide-2 {
-  background-color: #FDECDC;
+  background-color: #fdecdc;
   color: #fff;
   width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,14 +140,12 @@ export default {
   }
 }
 
-
-
 .intro__content {
   position: relative;
   right: 3%;
-  
+
   z-index: 3;
-    color: #fff;
+  color: #fff;
 }
 
 @media all and (max-width: 768px) {
@@ -151,10 +166,10 @@ export default {
 
 @keyframes slide-up {
   0% {
-    transform: TranslateY(250px)
+    transform: TranslateY(250px);
   }
   100% {
-    transform: TranslateY(0px)
+    transform: TranslateY(0px);
   }
 }
 
@@ -163,11 +178,7 @@ export default {
   text-align: right;
 }
 
-@media all and (max-width: 768px) {
-  .intro__title {
-    margin-bottom: 5vh;
-  }
-}
+
 
 .intro__txt {
   max-width: 35vw;
@@ -180,4 +191,27 @@ export default {
     margin-left: 5vw;
   }
 }
+------------GENERAL------------
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .intro__title{
+      padding: 20%;
+    }
+
+    .intro__sub__title{
+      text-align: center;
+      padding:30px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
 </style>

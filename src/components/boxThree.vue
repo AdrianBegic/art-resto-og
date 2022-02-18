@@ -13,17 +13,12 @@
         <p> Rips, loss of tension, paint chipping and
         mould can occur over long periods of storage. Old varnish can turn dark
         and become brittle over time obscuring brilliance and detail of the
-        work. </p>
-         <p>  Antique gilded plaster frames are extremely prone to breakage,
-        chipping,corner seperation and loss of finish.  All of these issues can
-        be resolved and l would be more than happy to sit down with you and go
-        over all the aspects concerned in retuning your piece to it's proper
-        condition. </p>
+        work. </p><span id="media-width">
         <p>You'll be surprised to see what can be done, no matter how
         poor it looks. I save works of art to be enjoyed by those who follow,
         </p>
         <p> GARY OWEN</p>
-        
+        </span>
     </div>
     <div class="img-holder-services">
       <img src="@/assets/images/art-resto.webp" />
@@ -56,7 +51,7 @@ p {
   width: 80vw;
   height: 70vh;
   margin: 0 auto;
-  
+  padding:0;
   
 }
 
@@ -64,7 +59,7 @@ p {
   float: right;
   width: 50%;
   height: 100%;
-  padding: none;
+  padding: 0;
 }
 
 .text-holder {
@@ -74,10 +69,43 @@ p {
   color: #4d4d4d;
   font-weight: 100;
   padding: 30px;
-  
 }
 
 .title-services {
   padding: 2% 0% 2%;
 }
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .box{
+    height: 100vh;
+  }
+
+   .text-holder { 
+    float: none;
+    margin-right:0;
+    width:100%;
+    height: 50%;   
+  }
+  .img-holder-services{
+    height: 50%;
+    width:100%;
+  }
+
+  #media-width{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
 </style>

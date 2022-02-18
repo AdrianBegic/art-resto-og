@@ -40,32 +40,75 @@ img {
   width: 80vw;
   height: 70vh;
   margin: 0 auto;
-  display: flex;
+  padding:0;
+  
 }
 
 .img-holder-services {
-  float: right;
+  float: left;
   width: 50%;
   height: 100%;
-  padding: none;
+  padding: 0;
 }
 
 .text-holder {
-  float: left;
+  float: right;
   width: 50%;
   height: 100%;
   color: #4d4d4d;
   font-weight: 100;
   padding: 30px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .title-services {
-  padding: 10% 0% 5%;
+  padding: 2% 0% 2%;
   font-size: 3em;
 }
 
-.content-services {
-    font-size: 1.7em;
-  
+.content-services{
+  font-size: 2em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .box{
+    height: 100vh;
+  }
+
+  .title-services {
+  font-size: 2.3em;
+}
+
+  .content-services{
+  font-size: 1.5em;
+}
+
+   .text-holder { 
+    float: none;
+    margin-right:0;
+    width:100%;
+    height: 50%;   
+  }
+  .img-holder-services{
+    height: 50%;
+    width:100%;
+  }
+
+  #media-width{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
 }
 </style>

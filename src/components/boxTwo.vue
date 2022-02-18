@@ -1,22 +1,13 @@
 <template>
-<div> <h1 class="title" >MY PAST WORK </h1> 
   <div class="box">
+  <h1 class="work-title">My Past Work</h1>
     <div class="img-holder">
       <ImageCompare   :BeforeImage= "BeforeImage1"  :AfterImage= "AfterImage1"/>
     </div>
     <div class="img-holder">
       <ImageCompare   :BeforeImage= "BeforeImage2"  :AfterImage= "AfterImage2"/>
     </div>
-    <div class="img-holder">
-      <ImageCompare  :BeforeImage= "BeforeImage3"  :AfterImage= "AfterImage3"/>
-    </div>
-    <div class="img-holder">
-      <ImageCompare    :BeforeImage= "BeforeImage4"  :AfterImage= "AfterImage4"/>
-    </div>
-  </div>
-  <div class="bottom-link">
-  <router-link class="bottom-link" to="/Gallery">SEE MORE ❯</router-link>
-  </div>
+      <router-link class="bottom-link" to="/Gallery">SEE MORE ❯</router-link>
   </div>
 </template>
 
@@ -39,16 +30,12 @@ export default {
       AfterImage1: require("../assets/images/frame-after.webp"),
       BeforeImage2: require("../assets/images/dog-before.webp"),
       AfterImage2: require("../assets/images/dog-after.webp"),
-       BeforeImage3: require("../assets/images/mary-before.webp"),
-      AfterImage3: require("../assets/images/mary-after.webp"),
-      BeforeImage4: require("../assets/images/coast-before.webp"),
-      AfterImage4: require("../assets/images/coast-after.webp"),
     };
   },
 };
 </script>
 
-<style >
+<style>
 
 img , svg {
     min-height: 500px;
@@ -56,9 +43,17 @@ img , svg {
 }
 
 .box {
+ background-color: #F3D7C1;
   width: 70%;
   height: auto;
   margin: 0 auto;
+  margin: 40px;
+  padding:30px;
+}
+
+.work-title {
+  color: #111;
+  font-size: 3em;
 }
 
 .img-holder {
@@ -72,7 +67,7 @@ img , svg {
     display: inline-block;
     cursor: pointer;
   text-decoration: none;
-  color: #fff;
+  color: #111;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
 }
@@ -90,6 +85,37 @@ img , svg {
   font-size: 4em;
 }
 
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .box{
+    height: auto;
+    width: 80vw
+  }
+
+   .img-holder { 
+    float: none;
+    margin-right:0;
+    width:100%;
+    height: 50%;   
+  }
+  .img-holder{
+    height: 50%;
+    width:100%;
+  }
+
+  #media-width{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
 
 
 </style>
