@@ -48,7 +48,7 @@ p {
 
 .box {
   background-color: #F3D7C1;
-  width: 80vw;
+  width: 70vw;
   height: 70vh;
   margin: 0 auto;
   padding:0;
