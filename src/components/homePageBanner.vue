@@ -73,6 +73,10 @@ a:hover {
 }
 
 @media (max-width: 767px) {
-  .cards { grid-template-columns: repeat(1, 1fr); }
+  .cards { 
+    grid-template-columns: repeat(1, 1fr);
+    width: 89vw;
+     }
+
 }
 </style>

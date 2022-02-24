@@ -47,7 +47,6 @@ img , svg {
   width: 100%;
   height: auto;
   margin: 0 auto;
- 
   padding:30px;
   border-radius: 3px;
 }
@@ -95,7 +94,7 @@ img , svg {
     /* phones */
     .box{
     height: auto;
-    width: 80vw;
+    width: 100vw;
     padding: 10px;
   }
 

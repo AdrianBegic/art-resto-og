@@ -47,4 +47,20 @@ export default {
   color: #fff;
 }
 
+
+media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+   .contact-title {
+     font-size: 4em;
+   }
+
+
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
 </style>

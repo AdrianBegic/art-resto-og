@@ -257,6 +257,20 @@ export default {
     padding: 30px;
   }
 
+.parallaxOne {
+  height: 101vh;
+  padding-top: 5%;
+}
+
+.parallaxTwo {
+  height: 135vh;
+  padding-top: 5%;
+}
+
+
+.slide-2 {
+  padding: 5%;
+}
   
 }
 

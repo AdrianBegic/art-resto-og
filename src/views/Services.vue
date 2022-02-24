@@ -58,7 +58,6 @@ export default {
   color: #fff;
   width: 100%;
   height: fit-content;
-    display: flex;
     align-items: center;
     padding: 80px;
 }
@@ -93,6 +92,39 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+  .box {
+    width: 90vw;
+  }
+
+  .title-services {
+    padding-top: 50px;
+  }
+
+   .services-title {
+     font-size: 4em;
+   }
+
+   .slide-0-services {
+     padding: 5%;
+     height: 112vh;
+   }
+
+  p {
+    font-size: 1em;
+  }
+  
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
 }
 
 </style>

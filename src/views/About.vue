@@ -134,6 +134,18 @@ export default {
      font-size: 4em;
    }
 
+   .slide-0-about {
+     padding: 5%;
+   }
+
+   .slide-1-about {
+     padding: 5%;
+   }
+
+   .slide-2-about {
+     padding: 5%;
+   }
+
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */

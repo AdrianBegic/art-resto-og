@@ -78,10 +78,11 @@ img {
   /* phones */
   .box {
     height: 100vh;
+    width: 90vw;
   }
 
   .content-about {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .text-holder {

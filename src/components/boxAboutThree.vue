@@ -96,6 +96,7 @@ a:hover {
   /* phones */
   .box {
     height: 100vh;
+    width: 90vw;
   }
 
   p {
@@ -119,6 +120,10 @@ a:hover {
 
   #media-width {
     display: none;
+  }
+
+  .content  {
+    font-size: 1.4em;
   }
 }
 

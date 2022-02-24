@@ -78,6 +78,7 @@ p {
   /* phones */
   .box {
     height: 100vh;
+    width: 90vw;
   }
 
   p {

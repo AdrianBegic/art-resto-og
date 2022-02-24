@@ -101,7 +101,8 @@ a:hover {
 @media only screen and (max-width: 767px) {
     /* phones */
     .box{
-    height: 80vh;
+    height: auto;
+    width: 90vw;
   }
 
 h1 {

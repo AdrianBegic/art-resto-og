@@ -96,8 +96,14 @@ p {
     float: none;
     margin-right:0;
     width:100%;
-    height: 50%;   
+    height: auto;  
+    padding: 5%; 
   }
+
+  .title-services {
+    margin: 0 auto;
+  }
+
   .img-holder-services{
     height: 50%;
     width:100%;
