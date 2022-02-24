@@ -3,39 +3,28 @@
         <div class="text-holder">
       <container>
           <div class="row body">
-    <form action="#">
-      <ul>
-        
-        <li>
-          <p class="left">
-            <label for="first_name">first name</label>
-            <input type="text" name="first_name" placeholder="John" />
-          </p>
-          <p class="pull-right">
-            <label for="last_name">last name</label>
-            <input type="text" name="last_name" placeholder="Smith" />      
-          </p>
-        </li>
-        
-        <li>
-          <p>
-            <label for="email">email <span class="req">*</span></label>
-            <input type="email" name="email" placeholder="john.smith@gmail.com" />
-          </p>
-        </li>        
-        <li><div class="divider"></div></li>
-        <li>
-          <label for="comments">comments</label>
-          <textarea></textarea>
-        </li>
-        
-        <li>
-          <input class="btn btn-submit" type="submit" value="Submit" />
-          <small>or press <strong>enter</strong></small>
-        </li>
-        
-      </ul>
-    </form>  
+          <h1 class="contact"> Contact Me</h1>
+     <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+    <h1 class="sub-contact"> No Appointment Necessary</h1>
   </div>
        
       </container>
@@ -80,6 +69,15 @@ p {
   font-size: 1.2em;
 }
 
+.contact {
+  font-size: 3em;
+  padding: 20px;
+}
+
+.sub-contact {
+  font-size: 2em;
+   padding: 20px;
+}
 
 .img-holder {
   float: right;
@@ -158,5 +156,95 @@ h1 {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */
 }
+
+
+
+.feedback-input {
+	color:#000;
+	font-size: 1.2em;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #936F5D;
+	color: #936F5D;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #936F5D;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #936F5D;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
 
 </style>

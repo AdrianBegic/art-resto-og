@@ -26,6 +26,9 @@
       </div>
     
     </section>
+    <div class="parallax-gallery-two">
+      
+      </div>
   </div>
 </template>
 
@@ -68,7 +71,7 @@ figure {
 }
 
 .parallax-gallery {
-  background-image: url("../assets/images/pexels-andrew-neel-2123337.jpg");
+  background-image: url("../assets/images/gallery-splash-two.webp");
   height: 50vh;
   background-attachment: fixed;
   background-position: center;
@@ -78,6 +81,19 @@ figure {
   align-items: center;
   justify-content: center;
 }
+
+.parallax-gallery-two {
+  background-image: url("../assets/images/gallery-splash-two.webp");
+  height: 20vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .gallery-title {
   font-size: 9em;
@@ -132,13 +148,13 @@ h1 {
   counter-increment: item-counter;
 }
 .item:nth-of-type(3n) {
-  background-image: url("../assets/images/dog-after.webp");
+  background-image: url("../assets/images/pic2.webp");
 }
 .item:nth-of-type(4n) {
-  background-image: url("../assets/images/dog-after.webp");
+  background-image: url("../assets/images/horizontal-1.webp");
 }
 .item:nth-of-type(5n) {
-  background-image: url("../assets/images/dog-after.webp");
+  background-image: url("../assets/images/mary-after.webp");
 }
 .item:nth-of-type(6n) {
   background-image: url("../assets/images/dog-after.webp");

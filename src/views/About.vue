@@ -4,21 +4,40 @@
 
       <h1 class="about-title">ABOUT</h1>
   </div>
-  <div class="wrapper">
+  <div class="slide-0-about">
 
+    <boxAboutOne/>
     
+  </div>
+
+  <div class="slide-1-about">
+
+    <boxAboutTwo/>
     
+  </div>
+
+  <div class="slide-2-about">
+
+    <boxAboutThree/>
+    
+  </div>
+  <div class="parallax-about-two">
+
   </div>
  
 </template>
 
 <script>
-
+import boxAboutOne from '../components/boxAboutOne.vue'
+import boxAboutTwo from '../components/boxAboutTwo.vue'
+import boxAboutThree from '../components/boxAboutThree.vue'
 
 export default {
-  name: "Contact",
+  name: "About",
   components: {
-      
+      boxAboutOne,
+      boxAboutTwo,
+      boxAboutThree,
   },
 };
 </script>
@@ -47,6 +66,37 @@ export default {
   color: #fff;
 }
 
+.slide-0-about {
+  background-color: #FDECDC;
+  color: #fff;
+  width: 100%;
+  height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+.slide-1-about {
+  background-color: #FDECDC;
+  color: #fff;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+    align-items: center;
+    padding: 60px 0px ;
+}
+
+.slide-2-about {
+  background-color: #FDECDC;
+  color: #fff;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+    align-items: center;
+    padding: 60px 0px ;
+}
+
+
 .parallax-about {
   background-image: url("../assets/images/pexels-andrew-neel-2123337.jpg");
   height: 50vh;
@@ -58,5 +108,36 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
+.parallax-about-two {
+  background-image: url("../assets/images/services-splash.webp");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+   .about-title {
+     font-size: 4em;
+   }
+
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
 
 </style>

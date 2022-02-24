@@ -1,17 +1,11 @@
 <template>
   <div class="box">
-  <h1 class="work-title">My Past Work</h1>
+  <h1 class="work-title">PAST WORK</h1>
     <div class="img-holder">
       <ImageCompare   :BeforeImage= "BeforeImage1"  :AfterImage= "AfterImage1"/>
     </div>
     <div class="img-holder">
       <ImageCompare   :BeforeImage= "BeforeImage2"  :AfterImage= "AfterImage2"/>
-    </div>
-    <div class="img-holder">
-      <ImageCompare   :BeforeImage= "BeforeImage1"  :AfterImage= "AfterImage1"/>
-    </div>
-    <div class="img-holder">
-      <ImageCompare id="mobile"  :BeforeImage= "BeforeImage2"  :AfterImage= "AfterImage2"/>
     </div>
       <router-link class="bottom-link" to="/Gallery">SEE MORE ❯</router-link>
   </div>

@@ -22,10 +22,11 @@ export default {
 <style scoped>
 .wrapper {
   background-color: #FDECDC;
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
     align-items: center;
+    padding: 8%;
 }
 
 

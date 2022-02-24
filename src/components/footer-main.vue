@@ -42,15 +42,13 @@
             <a href="mailto:support@company.com">gary-framing@hotmail.com</a>
           </p>
         </div>
+        
       </div>
 
       <div class="footer-right">
         <p class="footer-company-about">
-          <span>About Me</span>
-          I take great pride in my ability to bring back the lost beauty and
-          life to works of art and their accompanying frames. I also look after
-          all your framing needs with the care they deserve and the best
-          materials available.
+
+           <img id="map" src="../assets/images/map-new.webp" />
         </p>
       </div>
     </footer>
@@ -72,13 +70,21 @@ export default {
 </script>
 
 <style scoped>
+#map {
+  width: 300px;
+  height: 200px;
+  min-height: 200px;
+max-height: 200px;
+border: solid 3px #77665C;
+}
+
+
 .footer-distributed {
   background: #111;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
   padding: 55px 50px;
   border-top: solid 2px #222;
 }
@@ -140,7 +146,7 @@ export default {
 .footer-distributed .footer-center i {
   background-color: #fff;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 1em;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -158,15 +164,16 @@ export default {
 .footer-distributed .footer-center p {
   display: inline-block;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 100;
+  font-size: 2em;
   vertical-align: middle;
   margin: 0;
 }
 
 .footer-distributed .footer-center p span {
   display: block;
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: 100;
+  font-size: 1em;
   line-height: 2;
 }
 
@@ -233,16 +240,14 @@ export default {
 }
 
 @media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-  }
+
 
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
   }
 

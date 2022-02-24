@@ -4,7 +4,7 @@
     <div class="routing" v-if="this.$route.path == '/'">
       <div class="slide-0">
         <div class="intro__content">
-          <h1 class="intro__title">OWEN GRAY</h1>
+          <h1 class="intro__title">GARY OWEN</h1>
           <h1 class="intro__sub__title">
             FINE ART RESTORATION AND FRAMING SINCE 1988
           </h1>
@@ -12,7 +12,7 @@
       </div>
 
       <div class="intro-slide">
-        
+        <homePageBanner/>
       </div>
 
 <div class="parallaxOne"><Box/></div>
@@ -25,9 +25,10 @@
       <div class="parallaxTwo"><contactForm/></div>
 </div>
     <router-view >
- 
+  
 </router-view>
 
+ <topButton/>
     <footerMain />
   </div>
 </template>
@@ -38,6 +39,8 @@ import Box from "@/components/box.vue";
 import contactForm from '@/components/contactForm.vue'
 import boxTwo from "@/components/boxTwo.vue";
 import footerMain from "@/components/footer-main.vue";
+import homePageBanner from '@/components/homePageBanner.vue'
+import topButton from '@/components/topButton.vue'
 
 export default {
   name: "Home",
@@ -47,6 +50,8 @@ export default {
     contactForm,
     boxTwo,
     footerMain,
+    homePageBanner,
+    topButton,
   },
 };
 </script>
@@ -127,7 +132,7 @@ export default {
 /*------------PARALLAX-------------*/
 
 .parallaxOne {
-  background-image: url("./assets/images/slide-2-splash.jpg");
+  background-image: url("./assets/images/splash-6.webp");
   height: auto;
   background-attachment: fixed;
   background-position: center;
@@ -138,7 +143,7 @@ export default {
 
 
 .parallaxTwo {
-  background-image: url("./assets/images/gallery-splash.webp");
+  background-image: url("./assets/images/splash-5.webp");
   height: auto;
   background-attachment: fixed;
   background-position: center;
@@ -152,7 +157,7 @@ export default {
   background-color: #fdecdc;
   color: #fff;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
 }
