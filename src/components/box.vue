@@ -102,11 +102,13 @@ a:hover {
     /* phones */
     .box{
     height: auto;
-    width: 90vw;
+    width: 100vw;
+    border-radius: 0px;
   }
 
 h1 {
-  padding-top: 10%;
+  padding: 5%;
+  font-size: 3em;
 }
    .text-holder { 
     float: none;
@@ -119,8 +121,12 @@ h1 {
     width:100%;
   }
 
+  .content{
+    padding-bottom: 5%;
+  }
+
 #owen {
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 

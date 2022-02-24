@@ -72,32 +72,37 @@ img {
 
 @media only screen and (min-width: 768px) {
   /* tablets and desktop */
+  .content-about {
+    font-size: 1.4em;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
   /* phones */
   .box {
-    height: 100vh;
-    width: 90vw;
+    height: auto;
+    width: 100vw;
+    border-radius: 0px;
   }
 
   .content-about {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .text-holder {
     float: none;
     margin-right: 0;
     width: 100%;
-    height: 50%;
+    height: auto;
   }
   .img-holder-about {
-    height: 50%;
+    height: 40%;
     width: 100%;
   }
 
   #frame {
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
   }
 
   #media-width {

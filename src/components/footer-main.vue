@@ -85,7 +85,7 @@ border: solid 3px #77665C;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  padding: 55px 50px;
+  padding: 2%;
   border-top: solid 2px #222;
 }
 
@@ -106,7 +106,7 @@ border: solid 3px #77665C;
 
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px "Open Sans", cursive;
+ font-size: 3em;
   margin: 0;
 }
 
@@ -256,8 +256,11 @@ border: solid 3px #77665C;
   }
 }
 
-media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     /* tablets and desktop */
+    a {
+     font-size: 0.8em;
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -265,6 +268,10 @@ media only screen and (min-width: 768px) {
    a {
      font-size: 0.8em;
    }
+
+   
+
+   
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */

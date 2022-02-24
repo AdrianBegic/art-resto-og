@@ -42,7 +42,9 @@ beforeUnmount() {
 .invisible {
     display: none;
   }
-
+*{
+  scroll-behavior: [ auto | smooth ];
+}
 
 #btn {
   position: fixed;

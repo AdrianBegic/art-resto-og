@@ -84,12 +84,17 @@ p {
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
+    .box{
+    height: 80vh;
+    width: 90vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
     /* phones */
     .box{
     height: 100vh;
+    border-radius: 0px;
   }
 
    .text-holder { 
@@ -110,7 +115,7 @@ p {
   }
 
 #resto {
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 0px 0px;
 }
 
   #media-width{

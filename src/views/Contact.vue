@@ -48,7 +48,7 @@ export default {
 }
 
 
-media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     /* tablets and desktop */
 }
 
@@ -57,7 +57,13 @@ media only screen and (min-width: 768px) {
    .contact-title {
      font-size: 4em;
    }
+.wrapper {
+  padding: 0px;
+}
 
+.splash{
+  height: 40vh;
+}
 
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {

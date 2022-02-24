@@ -138,7 +138,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 30px;
+  padding: 5%;
 }
 
 
@@ -149,7 +149,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 30px;
+  padding: 5%;
 }
 
 /*------------------------------------------*/
@@ -241,15 +241,21 @@ export default {
     margin-left: 5vw;
   }
 }
-------------GENERAL------------ @media only screen and (min-width: 768px) {
+------------GENERAL------------ 
+@media only screen and (min-width: 768px) {
   /* tablets and desktop */
+
+  .parallaxOne {
+  padding: 5%;
+}
 }
 
 @media only screen and (max-width: 767px) {
   /* phones */
   .intro__title {
-    padding: 20%;
+    padding: 10%;
     padding-top: 50%;
+    font-size: 8em;
   }
 
   .intro__sub__title {
@@ -258,14 +264,13 @@ export default {
   }
 
 .parallaxOne {
-  height: 101vh;
-  padding-top: 5%;
+  display: contents;
 }
 
 .parallaxTwo {
-  height: 135vh;
-  padding-top: 5%;
+ display: contents;
 }
+
 
 
 .slide-2 {

@@ -43,7 +43,7 @@ img , svg {
 }
 
 .box {
- background-color: #F3D7C1;
+ background-color: #fdecdc;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -113,9 +113,17 @@ img , svg {
     display: none;
   }
 
+  .work-title{
+    padding: 5%;
+  }
+
+  .bottom-link{
+    padding: 5%;  
+  }
+
   img , svg {
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 400px;
+    max-height: 400px;
 }
 
 #mobile {

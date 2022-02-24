@@ -120,13 +120,18 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
+    .box{
+    width: 80vw;
+    height: 85vh;
+  }
 }
 
 @media only screen and (max-width: 767px) {
     /* phones */
     .box{
     height: auto;
-    width: 90vw;
+    width: 100vw;
+    border-radius: 0px;
   }
 
 h1 {
@@ -136,15 +141,22 @@ h1 {
     float: none;
     margin-right:0;
     width:100%;
-    height: auto;   
+    height: auto;  
+    padding: 5%; 
   }
   .img-holder{
     height: 60%;
     width:100%;
   }
 
+.feedback-input{
+  padding: 2px;
+}
+
+
 #map {
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0%;
 }
 
 

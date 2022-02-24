@@ -9,7 +9,9 @@
     <boxThree/>
    
     </div>
-    <div class="parallax-gallery"></div>
+    <div class="parallax-gallery">
+    
+    </div>
     <div class="slide-1-services">
    
     <boxFour/>
@@ -28,6 +30,7 @@ export default {
   components: {
       boxThree,
       boxFour,
+      
   },
 };
 </script>
@@ -102,7 +105,16 @@ media only screen and (min-width: 768px) {
 @media only screen and (max-width: 767px) {
     /* phones */
   .box {
-    width: 90vw;
+    width: 100vw;
+  }
+
+  .parallax-services {
+    background-attachment: inherit;
+    height: 40vh;
+  }
+
+  .parallax-gallery{
+    display: contents;
   }
 
   .title-services {
@@ -114,8 +126,13 @@ media only screen and (min-width: 768px) {
    }
 
    .slide-0-services {
-     padding: 5%;
-     height: 112vh;
+     padding: 0;
+     height: auto;
+   }
+
+   .slide-1-services {
+     padding: 0;
+     height: auto;
    }
 
   p {

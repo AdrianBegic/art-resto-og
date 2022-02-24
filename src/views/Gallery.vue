@@ -1,8 +1,8 @@
 <template>
   <div class="content">
-  <div class="parallax-gallery">
+    <div class="parallax-gallery">
       <h1 class="gallery-title">GALLERY</h1>
-      </div>
+    </div>
     <section class="section-gallery">
       <div class="grid">
         <div class="item item--large"></div>
@@ -15,20 +15,24 @@
 
         <div class="item item--large"></div>
 
-        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
+        <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+        </div>
 
-        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
+        <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+        </div>
 
-        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
+        <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+        </div>
 
-        <div class="item item--medium"><ImageCompare   :BeforeImage= "BeforeImage"  :AfterImage= "AfterImage"/></div>
-
+        <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+        </div>
       </div>
-    
     </section>
-    <div class="parallax-gallery-two">
-      
-      </div>
+    <div class="parallax-gallery-two"></div>
   </div>
 </template>
 
@@ -51,7 +55,6 @@ export default {
 </script>
 
 <style scoped>
-
 figure {
   width: 100%;
   height: 100%;
@@ -59,8 +62,8 @@ figure {
   margin: 0;
 }
 
-.section-gallery{
-  padding: 100px 30px
+.section-gallery {
+  padding: 100px 30px;
 }
 
 .content {
@@ -94,13 +97,11 @@ figure {
   justify-content: center;
 }
 
-
 .gallery-title {
   font-size: 9em;
   margin-top: 15%;
   color: #fff;
 }
-
 
 @supports (display: grid) {
   display: block;
@@ -189,29 +190,43 @@ h1 {
     grid-row-end: span 1;
   }
   .grid {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: 100px;
-  grid-auto-flow: row dense;
-}
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: row dense;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+  /* tablets and desktop */
+  .gallery-title {
+    margin-top: 20%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    /* phones */
-   .gallery-title {
-     font-size: 4em;
-   }
+  /* phones */
+  .gallery-title {
+    font-size: 4em;
+    margin-top: 20%;
+  }
 
-   img,svg {
-     min-height: 500px;
-     max-height:500px
-   }
+  .parallax-gallery {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+
+  .parallax-gallery-two {
+    background-attachment: inherit;
+  }
+
+  img,
+  svg {
+    min-height: 500px;
+    max-height: 500px;
+  }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
+  /* portrait phones */
 }
-
 </style>

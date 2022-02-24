@@ -16,6 +16,8 @@
     
   </div>
 
+  <img id="frame" src="../assets/images/face.webp" />
+
   <div class="slide-2-about">
 
     <boxAboutThree/>
@@ -31,6 +33,7 @@
 import boxAboutOne from '../components/boxAboutOne.vue'
 import boxAboutTwo from '../components/boxAboutTwo.vue'
 import boxAboutThree from '../components/boxAboutThree.vue'
+
 
 export default {
   name: "About",
@@ -50,6 +53,12 @@ export default {
   display: flex;
     align-items: center;
 }
+
+#frame {
+    display: none;
+    max-width: 100vw;
+    min-width: 100vw;
+  }
 
 .splash {
   width: 100%;
@@ -135,16 +144,31 @@ export default {
    }
 
    .slide-0-about {
-     padding: 5%;
+     padding: 0%;
    }
 
    .slide-1-about {
-     padding: 5%;
+     padding:  0%;
    }
 
    .slide-2-about {
-     padding: 5%;
+     padding:  0%;
    }
+
+   .parallax-about{
+      background-attachment: inherit;
+      height: 40vh;
+   }
+
+   .parallax-about-two{
+      display: none;
+   }
+
+   
+  #frame {
+    display: inherit;
+  }
+   
 
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {

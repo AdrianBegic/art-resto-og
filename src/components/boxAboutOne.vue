@@ -72,17 +72,21 @@ p {
 
 @media only screen and (min-width: 768px) {
   /* tablets and desktop */
+  p {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   /* phones */
   .box {
-    height: 100vh;
-    width: 90vw;
+    height: auto;
+    width: 100vw;
+    border-radius: 0px;
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .text-holder {
@@ -92,12 +96,13 @@ p {
     height: 50%;
   }
   .img-holder-services {
-    height: 50%;
+    height: 40%;
     width: 100%;
   }
 
   #resto {
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 0px 0px 0px;
+    display: none;
   }
 
   #media-width {

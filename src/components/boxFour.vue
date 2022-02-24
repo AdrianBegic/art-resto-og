@@ -1,8 +1,5 @@
 <template>
   <div class="box">
-    <div class="img-holder-services">
-      <img id="frame" src="@/assets/images/frames.webp" />
-    </div>
     <div class="text-holder">
       <container>
         <h1 class="title-services">Custom Framing Since 1988</h1>
@@ -12,8 +9,11 @@
           Good it can look. I have hundreds of frames to choose from and there
           Is one that is perfect for your piece.
         </p>
-       
+        <router-link class="header__nav-link" to="/Contact">Contact Me ❯</router-link>
       </container>
+    </div>
+     <div class="img-holder-services">
+      <img id="frame" src="@/assets/images/frames.webp" />
     </div>
   </div>
 </template>
@@ -36,7 +36,7 @@ img {
 }
 
 #frame {
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .box {
@@ -49,14 +49,14 @@ img {
 }
 
 .img-holder-services {
-  float: left;
+  float: right;
   width: 50%;
   height: 100%;
   padding: 0;
 }
 
 .text-holder {
-  float: right;
+  float: left;
   width: 50%;
   height: 100%;
   color: #4d4d4d;
@@ -77,15 +77,31 @@ img {
   font-size: 2em;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+a:hover {
+  color: #666;
+}
+
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
+    .content-services{
+  font-size: 1.5em;
+}
 }
 
 @media only screen and (max-width: 767px) {
     /* phones */
     .box{
-    height: 100vh;
+    height: auto;
+    border-radius: 0px;
   }
 
   .title-services {
@@ -108,7 +124,7 @@ img {
   }
 
   #frame {
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 
   #media-width{
