@@ -60,9 +60,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
-  .box{
-    border-radius: 8px;
-  }
+  
   
 }
 
@@ -253,7 +251,7 @@ export default {
 @media only screen and (max-width: 767px) {
   /* phones */
   .intro__title {
-    padding: 10%;
+    padding: 5%;
     padding-top: 50%;
     font-size: 8em;
   }

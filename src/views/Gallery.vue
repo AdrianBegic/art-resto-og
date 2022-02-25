@@ -5,31 +5,42 @@
     </div>
     <section class="section-gallery">
       <div class="grid">
-        <div class="item item--large"></div>
 
-        <div class="item item--large"></div>
-
-        <div class="item item--large"></div>
-
-        <div class="item item--large"></div>
-
-        <div class="item item--large"></div>
-
-        <div class="item item--medium">
-          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+      <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage1" :AfterImage="AfterImage1" />
         </div>
 
         <div class="item item--medium">
-          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+          <ImageCompare :BeforeImage="BeforeImage2" :AfterImage="AfterImage2" />
         </div>
 
         <div class="item item--medium">
-          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+          <ImageCompare :BeforeImage="BeforeImage3" :AfterImage="AfterImage3" />
         </div>
 
         <div class="item item--medium">
-          <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage" />
+          <ImageCompare :BeforeImage="BeforeImage4" :AfterImage="AfterImage4" />
         </div>
+
+        <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage5" :AfterImage="AfterImage5" />
+        </div>
+
+        <div class="item item--medium">
+          <ImageCompare :BeforeImage="BeforeImage6" :AfterImage="AfterImage6" />
+        </div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+        <div class="item item--large"></div>
+
+  
       </div>
     </section>
     <div class="parallax-gallery-two"></div>
@@ -47,8 +58,18 @@ export default {
 
   data() {
     return {
-      BeforeImage: require("../assets/images/frame-before.webp"),
-      AfterImage: require("../assets/images/frame-after.webp"),
+      BeforeImage1: require("../assets/images/frame-before.webp"),
+      AfterImage1: require("../assets/images/frame-after.webp"),
+       BeforeImage2: require("../assets/images/landscape-before.webp"),
+      AfterImage2: require("../assets/images/landscape-after.webp"),
+       BeforeImage3: require("../assets/images/mary-before.webp"),
+      AfterImage3: require("../assets/images/mary-after.webp"),
+       BeforeImage4: require("../assets/images/frame-2-before.webp"),
+      AfterImage4: require("../assets/images/frame-2-after.webp"),
+       BeforeImage5: require("../assets/images/frame-3-before.webp"),
+      AfterImage5: require("../assets/images/frame-3-after.webp"),
+       BeforeImage6: require("../assets/images/frame-4-before.webp"),
+      AfterImage6: require("../assets/images/frame-4-after.webp"),
     };
   },
 };
@@ -141,12 +162,15 @@ h1 {
   grid-column-start: auto;
   grid-row-start: auto;
   color: #fff;
-  background: url("../assets/images/frame-after.webp");
+  background: url("../assets/images/pic-12.webp");
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
   transition: transform 0.3s ease-in-out;
   counter-increment: item-counter;
+}
+.item:nth-of-type(2n) {
+  background-image: url("../assets/images/pic1.webp");
 }
 .item:nth-of-type(3n) {
   background-image: url("../assets/images/pic2.webp");
@@ -155,7 +179,7 @@ h1 {
   background-image: url("../assets/images/horizontal-1.webp");
 }
 .item:nth-of-type(5n) {
-  background-image: url("../assets/images/mary-after.webp");
+  background-image: url("../assets/images/pic-13.webp");
 }
 .item:nth-of-type(6n) {
   background-image: url("../assets/images/dog-after.webp");
@@ -211,9 +235,8 @@ h1 {
   }
 
   .parallax-gallery {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+     background-attachment: inherit;
+    height: 40vh;
   }
 
   .parallax-gallery-two {

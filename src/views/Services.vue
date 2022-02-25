@@ -66,7 +66,7 @@ export default {
 }
 
 .slide-1-services {
-  background-color: #FDECDC0;
+  background-color: #FDECDC;
   color: #fff;
   width: 100%;
   height: fit-content;
@@ -76,7 +76,7 @@ export default {
 }
 
 .parallax-services {
-  background-image: url("../assets/images/services-splash.webp");
+  background-image: url("../assets/images/splash-9.webp");
   height: 50vh;
   background-attachment: fixed;
   background-position: center;

@@ -87,6 +87,7 @@ border: solid 3px #77665C;
   text-align: left;
   padding: 2%;
   border-top: solid 2px #222;
+  overflow: auto;
 }
 
 .footer-distributed .footer-left,
