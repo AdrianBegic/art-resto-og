@@ -116,6 +116,7 @@ export default {
 .slide-0 {
   background-image: url("./assets/images/pexels-photo-2378469.jpeg");
   background-repeat: no-repeat, repeat;
+   background-size: cover;
   color: #fff;
   width: 100%;
   height: 100vh;
