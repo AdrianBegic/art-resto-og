@@ -29,7 +29,7 @@
      <vue-progress-bar></vue-progress-bar>
 
  <topButton/>
-    <footerMain />
+    <footerMain/>
   </div>
 </template>
 
