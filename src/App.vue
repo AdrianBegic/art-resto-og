@@ -24,9 +24,9 @@
 
       <div class="parallaxTwo"><contactForm/></div>
 </div>
-    <router-view >
-  
-</router-view>
+    <router-view ></router-view>
+
+     <vue-progress-bar></vue-progress-bar>
 
  <topButton/>
     <footerMain />
@@ -53,6 +53,9 @@ export default {
     homePageBanner,
     topButton,
   },
+
+  
+
 };
 </script>
 

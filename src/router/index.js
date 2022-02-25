@@ -9,6 +9,7 @@ const routes = [
     path: '/gallery',
     name: 'Gallery',
     component: () => import('../views/Gallery.vue')
+    
   },
 
   {
@@ -41,6 +42,7 @@ const router = createRouter({
     document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
 }
 })
+
 
 
 
